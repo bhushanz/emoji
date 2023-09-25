@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  
+}
+
+.section{
+    height: 500px;
+    width: 80%;
+    background-color: rgb(244, 199, 199);
+    position: absolute;
+    top: 6%;
+    left: 12%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.emoji{
+    height: 222px;
+    width: 222px;
+    background:linear-gradient(rgb(255, 235, 170), rgb(251, 199, 10), rgb(102, 91, 20));
+    border-radius:50%;
+    display: flex;
+   
+
+}
+hr{ 
+    transform:rotate(90deg);
+     position: relative;
+     top: 90px;
+     left: 0px;
+     width: 9%;
+     height: 65%;
+     border-radius: 0% 50% 50% 0%;
+     background-color: rgb(234, 184, 228);
+     animation: rotate 5s ease-in-out infinite;
+}
+.eye1{
+    height:50px;
+    width: 50px;
+    background-color:rgb(255, 255, 255);
+    border-radius:  0%;
+    position: relative;
+    top: 60px;
+    left: 30px;
+    animation: eye1 5s ease-in infinite ; 
+}
+.eye2{
+    height:50px;
+    width: 50px;
+    position: relative;
+    top: 60px;
+    left: 90px;
+    background-color:white;
+    border-radius:  0%;
+    animation: eye2 5s ease-in-out infinite ;    
+}
+
+@keyframes eye1{
+    0%{
+        border-radius: 0% ;
+    }
+    25%{
+        border-radius: 50% ;
+        height: 60px;
+        width: 60px;
+    }
+    50%{
+       
+        border-radius:0% 00% 50% 50%;
+    }
+    75%{
+         border-radius: 50% 50% 0% 0% ;
+       
+    }
+    100%{
+        border-radius: 0% ;
+    }
+}
+@keyframes eye2{
+    0%{
+        border-radius: 0% ;
+    }
+    25%{
+        border-radius: 50%;
+         height: 40px;
+        width: 40px;
+    }
+    50%{
+        
+        border-radius:0% 00% 50% 50%;
+        
+    }
+    
+    75%{
+         border-radius: 50% 50% 0% 0% ;
+        
+    }
+    100%{
+        
+        border-radius: 0% ;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(90deg);
+    }
+    25%{
+            transform:rotate(82deg);
+            
+    }
+    50%{
+        transform:rotate(95deg);
+    }
+}
